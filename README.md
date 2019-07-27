@@ -8,9 +8,9 @@ In the interest of transparent and reproducible science, we offer this code repo
 
 As mentioned above, the Pfaendtner Research Group (PRG) simply _loves_ open source software. Using and creating software that is freely available is an excellent way to promote transparency and reproducibility in computational science. We used the following open source software to perform our analyses:
 
-- Gromacs (2018.3)
-- Plumed (2.4)
-- python (3.6)
+- [GROMACS](http://www.gromacs.org/) (2016.3)
+- [PLUMED](https://www.plumed.org/) (2.4)
+- [python](https://www.python.org/) (3.6)
 
 It will be easiest to apply our methods to a project of your own if you use these tools as well, and we would recommend these as generally useful tools for biomolecular simulations. 
 
@@ -19,19 +19,19 @@ If you are a seasoned MD professional - capable of calculating interaction energ
 
 ### Instructions
 
-Step 1 - Follow the equilibration/simulation protocol described in our paper to create triplicate simulations of your protein-ligand complex in aqueous (?) solution.
+__Step 1__ - Follow the equilibration/simulation protocol described in our paper to create triplicate simulations of your protein-ligand complex in aqueous (?) solution.
 
-Step 2 - Calculate atomic and hydrophilic contacts with `plumed driver`.
+__Step 2__ - Calculate atomic and hydrophilic contacts with `plumed driver`.
 
-Step 3 - Identify key residues by filtering contact data (`coord-driver-analysis.ipynb`).
+__Step 3__ - Identify key residues by filtering contact data (`coord-driver-analysis.ipynb`).
 
-Step 4a - Calculate center of mass distance from ligand to "key residues" identified in Step 3 with `plumed driver`.
+__Step 4a__ - Calculate center of mass distance from ligand to "key residues" identified in Step 3 with `plumed driver`.
 
-Step 4b - Use `gmx mdrun rerun` to calculate ligand-residue interaction energies.
+__Step 4b__ - Use `gmx mdrun rerun` to calculate ligand-residue interaction energies.
 
-Step 5 - Perform interaction energetic analyses in python (`interaction-energy.ipynb`).
+__Step 5__ - Perform interaction energetic analyses in python (`interaction-energy.ipynb`).
 
-Step 6 - Perform principal component analysis (PCA) and MeanShift clustering in python (`cluster-states.ipynb`).
+__Step 6__ - Perform principal component analysis (PCA) and MeanShift clustering in python (`cluster-states.ipynb`).
 
 
 
