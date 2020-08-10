@@ -36,5 +36,7 @@ __Step 6__ - Perform principal component analysis (PCA) and MeanShift clustering
 
 
 
+### Attribution
 
+If you use the code above to conduct original research, please cite our paper and reference this code repository. You can find our paper [here](https://doi.org/10.1021/acs.jpcb.0c02015). Thanks!
 
